@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yani Creaciones</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/imgModal.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar color-encabezado navbar-expand-lg navbar-light bg-light fixed-top">
+                <img src="src/img/logo.jpg" class="logo-yani fuente-nav" id="logo-yani">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end ml-auto " id="navbarNav">
+                    <ul class="navbar-nav fuente-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fuente-nav" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fuente-nav" data-toggle="dropdown"  aria-expanded="false" href="productos.html">Productos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item fuente-dropdown" href="porcenalas.html">Porcelana Fria</a></li>
+                        <li><a class="dropdown-item fuente-dropdown" href="sublimacion.html">Sublimaciones</a></li>
+                        </li>
+                    </ul>
+                    <li class="nav-item" data-toggle="modal" data-target="#modal-contacto">
+                        <a class="nav-link fuente-nav" href="#">Contacto</a>
+                    </li>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <section id="titulo">    
+                <br><h1 class="text-center fuente-titulo fuente-produc-titu mt-5 pt-5">Elegi el producto que mas te gusta</h1>
+            </section>
+        </div>
+        <main>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm card-margen">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen "id="myImg01" src="src/img/subli19.jpg" alt="Medias coloridas">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Medias Personalizadas</h5>
+                                    <p class="card-text">Elegi pue tu diseño y te hacemos</p>
+                                    <a href="#" class="btn btn-primary">Preguntar precio</a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">x</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>       
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg02" src="src/img/subli3.jpg" alt="Medias coloridas">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Medias Personalizadas</h5>
+                                <p class="card-text">Lindas medias de tu diseño</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg03" src="src/img/subli1.jpg" alt="Medias Coloridas">
+                            <div class="card-body">
+                                <h5 class="card-title">Medias Personalizadas</h5>
+                                <p class="card-text">Lindas medias de tu diseño</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div> 
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg04" src="src/img/subli-20.jpg" alt= "medias con taza">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tazas Personalizadas</h5>
+                                    <p class="card-text">Taza de osos escandalosos</p>
+                                    <a href="#" class="btn btn-primary ">Preguntar precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg05" src="src/img/subli8.jpg" alt= "varias tazas">
+                            <div class="card-body">
+                                <h5 class="card-title">Tazas Personalizadas</h5>
+                                <p class="card-text">El tetemetro <i class="em em-heart_eyes" aria-role="presentation" aria-label="SMILING FACE WITH HEART-SHAPED EYES"></i></p>
+                                <a href="#" class="btn btn-primary ">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg06" src="src/img/subli9.jpg" alt="Taza de cerro">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Tazas Personalizadas</h5>
+                                <p class="card-text">Para los de azul y grana</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg07" src="src/img/subli10.jpg" alt= "tazas dia de la madre">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tazas dia de la Madre</h5>
+                                    <p class="card-text">Para las mejores</p>
+                                    <a href="#" class="btn btn-primary ">Preguntar precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg08" src="src/img/subli11.jpg" alt= "taza para una persona especial">
+                            <div class="card-body">
+                                <h5 class="card-title">Tazas Personalizadas</h5>
+                                <p class="card-text">Para la persona especial que amas</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg09" src="src/img/subli12.jpg" alt="Termo para mate y guapa">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Termo y guampa</h5>
+                                <p class="card-text">Te llevamos el mate?<i class="em em-wink" aria-role="presentation" aria-label="WINKING FACE"></i></p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg010" src="src/img/subli7.jpg" alt= "Termo y guampa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Termo, guampa y bombilla</h5>
+                                    <p class="card-text">Todo tiene que combinar<i class="em em-relieved" aria-role="presentation" aria-label="RELIEVED FACE"></i></p>
+                                    <a href="#" class="btn btn-primary ">Preguntar precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg011" src="src/img/subli4.jpg" alt= "Pillamas sublimadas">
+                            <div class="card-body">
+                                <h5 class="card-title">Pillamas</h5>
+                                <p class="card-text">Para dormir con onda</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg012" src="src/img/subli18.jpg" alt="Pillamas sublimadas">
+                            <div class="card-body">
+                                <h5 class="card-title">Pillamas</h5>
+                                <p class="card-text">Para dormir con onda</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg013" src="src/img/subli17.jpg" alt= "Pillamas sublimadas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pillamas</h5>
+                                    <p class="card-text">Para dormir con onda</p>
+                                    <a href="#" class="btn btn-primary">Preguntar precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg014" src="src/img/subli21.jpg" alt= "Pillamas sublimadas">
+                            <div class="card-body">
+                                <h5 class="card-title">Pillamas</h5>
+                                <p class="card-text">Para dormir con onda</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg015" src="src/img/subli22.jpg" alt= "medias con taza">
+                            <div class="card-body">
+                                <h5 class="card-title">Pillamas</h5>
+                                <p class="card-text">Para dormir con onda</p>
+                                <a href="#" class="btn btn-primary">Preguntar precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        </main>    
+        <footer class="pie-pagina p-3">
+            <div class="redes-container">
+                <ul>
+                    <li><a href="https://www.facebook.com/yanicreaciones1-103447924354826" class="facebook"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/yanicreaciones1/" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/+595984423032?text=Hola+Yani+estoy+interesado+en+un+articulo+que+ofreces!" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <p class="m-0 text-center pie-pagina-texto">Contacto: <a href="mailto:email@yani.noez94@gmail.com">yani.noez94@gmail.com</a></p>
+        </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fuente-modal" id="exampleModalLabel">Contacta con Yani Creaciones</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body fuente-modal">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nombre completo</label>
+                            <input type="text" class="form-control fuente text-capitalize" autocomplete="off" id="exampleFormControlInput1" placeholder="Ingrese su nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control fuente" id="exampleFormControlInput2" autocomplete="off" placeholder="mail@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comentarios</label>
+                            <textarea class="form-control fuente " id="exampleFormControlTextarea1" autocomplete="off" rows="5" placeholder="Ingrese su comentario"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary fuente-modal" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary fuente-modal">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="js/modal-subli.js"></script>  
+    <script src="js/sitio.js"></script>      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

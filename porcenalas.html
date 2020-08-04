@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yani Creaciones</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/imgModal.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar color-encabezado navbar-expand-lg navbar-light bg-light fixed-top">
+                <img src="src/img/logo.jpg" class="logo-yani fuente-nav" id="logo-yani">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end ml-auto " id="navbarNav">
+                    <ul class="navbar-nav fuente-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fuente-nav" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fuente-nav" data-toggle="dropdown"  aria-expanded="false" href="productos.html">Productos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item fuente-dropdown" href="porcenalas.html">Porcelana Fria</a></li>
+                        <li><a class="dropdown-item fuente-dropdown" href="sublimacion.html">Sublimaciones</a></li>
+                        </li>
+                    </ul>
+                    <li class="nav-item" data-toggle="modal" data-target="#modal-contacto">
+                        <a class="nav-link fuente-nav" href="#">Contacto</a>
+                    </li>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <section id="titulo">    
+                <br><h1 class="text-center fuente-titulo fuente-produc-titu mt-5 pt-5">Elegi el producto que mas te gusta</h1>
+            </section>
+        </div>
+        <main>
+            <div class="container">
+                <div class="ventana" id="ventana-imagen">
+                    <div id="cerrar-ven"><a href="javascript:cerrar()"><img src="src/img/cerrar.png"></a></a></div>
+                        <img class="ajuste-modal-img" src="src/img/porce1.jpg" alt="Porcelana fria">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm card-margen">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg" src="src/img/porce1.jpg" width="100"  alt="Porcelana fria">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Porcenala Fria</h5>
+                                    <p class="card-text">Hecho en porcelana fria</p>
+                                    <a href="#" class="btn btn-primary abrir-ventana">Preguntar Precio</a>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">x</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>       
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg2" src="src/img/porce01.jpg" alt="Porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana fria</p>
+                                <a href="#" id="agrandar-pc" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>  
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg3" src="src/img/porce2.jpg" alt="Porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana fria</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div> 
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg4" src="src/img/porce8.jpg" alt="porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana fria</p>
+                                <a href="javascript:abrir()" class="btn btn-primary abrir-ventana">Preguntar Precio</a>
+                            </div>
+                        </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg5" src="src/img/porce7.jpg" alt= "imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana Fria</p>
+                                <a href="#" class="btn btn-primary ">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg6" src="src/img/porce3.jpg" alt="imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana Fria</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg7" src="src/img/porce12.jpg" alt= "imagen porcelana fria">
+                                <div class="card-body">
+                                    <h5 class="card-title">Porcenala Fria</h5>
+                                    <p class="card-text">Hecho en porcelana Fria</p>
+                                    <a href="#" class="btn btn-primary ">Preguntar Precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg8" src="src/img/porce14.jpg" alt= "imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana Fria</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg9" src="src/img/porce9.jpg" alt="imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Porcenala Fria</h5>
+                                <p class="card-text">Hecho en porcelana Fria</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg10" src="src/img/porce17.jpg" alt= "imagen porcelana fria">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bombillas</h5>
+                                    <p class="card-text">Bombillas decoradas</p>
+                                    <a href="#" class="btn btn-primary ">Preguntar Precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg11" src="src/img/porce10.jpg" alt= "imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title">Porcenala Fria</h5>
+                                <p class="card-text">Especial para Baby Showers</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg12" src="src/img/porce18.jpg" alt="imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Lapices y Boligrafos</h5>
+                                <p class="card-text">Decoradas con porcelana fria!</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg13" src="src/img/porce13.jpg" alt= "imagen porcelana fria">
+                                <div class="card-body">
+                                    <h5 class="card-title">Conjunto tipo pillama</h5>
+                                    <p class="card-text">Especial para veladas largas</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg14" src="src/img/porce16.jpg" alt= "imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title">Tazas decoradas</h5>
+                                <p class="card-text">Especial para primavera</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg15" src="src/img/porce15.jpg" alt="imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Recuerdos</h5>
+                                <p class="card-text">Especial para baby showers</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card caja">
+                            <article class="card color-borde card-ancho">
+                                <img class="card-img-top ajuste-imagen" id="myImg16" src="src/img/porce5.jpg" alt= "imagen porcelana fria">
+                                <div class="card-body">
+                                    <h5 class="card-title">Porcenala Fria</h5>
+                                    <p class="card-text">Baby wait</p>
+                                    <a href="#" class="btn btn-primary ">Preguntar Precio</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg17" src="src/img/pesebre-porcenala.jpg" alt= "imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title">Porcenala Fria</h5>
+                                <p class="card-text">Especial para Navidad</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card caja">
+                        <article class="card color-borde card-ancho">
+                            <img class="card-img-top ajuste-imagen" id="myImg18" src="src/img/porce6.jpg" alt="imagen porcelana fria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Porcelana Fria</h5>
+                                <p class="card-text">Ula Ula</p>
+                                <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+                </div>
+                </main>    
+                <footer class="pie-pagina p-3">
+                    <div class="redes-container">
+                        <ul>
+                            <li><a href="https://www.facebook.com/yanicreaciones1-103447924354826" class="facebook"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/yanicreaciones1/" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://wa.me/+595984423032?text=Hola+Yani+estoy+interesado+en+un+articulo+que+ofreces!" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="m-0 text-center pie-pagina-texto">Contacto: <a href="mailto:email@yani.noez94@gmail.com">yani.noez94@gmail.com</a></p>
+                </footer>
+                <!-- Modal Pie Pagina -->
+                <div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fuente-modal" id="exampleModalLabel">Contacta con Yani Creaciones</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                    <div class="modal-body fuente-modal">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nombre completo</label>
+                                <input type="text" class="form-control fuente text-capitalize" autocomplete="off" id="exampleFormControlInput1" placeholder="Ingrese su nombre completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email</label>
+                                <input type="email" class="form-control fuente" id="exampleFormControlInput2" autocomplete="off" placeholder="mail@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Comentarios</label>
+                                <textarea class="form-control fuente " id="exampleFormControlTextarea1" autocomplete="off" rows="5" placeholder="Ingrese su comentario"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary fuente-modal" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary fuente-modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/modal-porc.js"></script>  
+        <script src="js/sitio.js"></script>      
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
