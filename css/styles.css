@@ -1,0 +1,281 @@
+body{
+    background: rgb(255, 238, 207);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-yani{
+    width: 5%;
+    cursor: pointer;
+}
+
+.fuente-nav{
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    padding: 0px ;
+}
+
+.nav-item{
+    border: 2px solid rgb(241, 218, 192);
+    border-radius: 10px;
+    box-shadow: none;
+    margin-left:10px;
+    padding: 10px 20px;
+    background: rgb(241, 218, 192);;
+}
+
+.nav-item:hover{
+    background: rgb(238, 189, 133);
+}
+
+.fuente-dropdown{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;   
+}
+
+.fuente-dropdown:hover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(240, 203, 161)   
+}
+
+.fuente{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fuente-titulo{
+    font-family: 'Aclonica', sans-serif;
+    color: tomato;
+    margin-bottom: 30px;
+}
+
+.descripcion{
+    font-size: 24px;
+    color: rgb(59, 48, 33);
+}
+
+.carrusel-1{
+    object-fit: cover;
+    object-position: 80%;
+    height: 400px;
+}
+
+.carrusel-2{
+    object-fit: cover;
+    object-position:0 30%;
+    height: 400px;
+}
+
+.caja-inicio{
+    font-size: 25px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 40px;
+    border: 7px solid rgb(224, 142, 127);
+    border-radius: 10px;
+    color:tomato;
+    font-weight: bold;  
+}
+
+.caja-inicio h5{
+    font-size: 25px;
+}
+
+.caja-inicio:hover{
+    border: 8px solid rgb(224, 142, 127);
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 5px 8px 8px rgb(236, 131, 113) ;
+    color:tomato;
+}
+
+.caja-inicio:hover h5{
+    font-weight: bold;
+    color: tomato;
+}
+
+.caja{
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    border: 3px solid rgb(100, 214, 224);
+    border-radius: 10px;
+}
+
+.caja:hover{
+    border: 4px solid rgb(64, 171, 233);
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 5px 8px 8px rgb(100, 214, 224) ;
+}
+
+.caja:hover h5{
+    font-weight: bold;
+    color: rgb(64, 171, 233);
+
+}
+
+.ajuste-imagen{
+    object-fit: cover;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.card-ancho{
+    max-width: 22rem;
+}
+
+.card-body{
+    text-align: center;
+    margin-top: -45px;
+}
+
+.card-margen{
+    margin-bottom: 40px;
+}tom
+
+.card-title{
+    font-weight: bold;
+}
+
+
+
+/*PRUEBA PARA AGRANDAR IMAGENES AL HACER CLIC*/
+.ventana{
+    width: 30%;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 330px;
+    border-radius: 22px;
+    position: absolute;
+    left:34%;
+    z-index: 1;
+    display: none; /* Se oculta la ventana*/
+
+
+}
+
+#cerrar-ven{
+    position: absolute;
+    left: 840px;
+    top:-17px;
+    z-index: 1
+}
+
+.ajuste-modal-img{
+    object-fit: cover;
+    position: absolute;
+    width: 180%;
+    height: 600px;
+    min-height: 500px;
+    border-radius: 22px;
+    left: -30%;
+    top: -20px;
+    margin-bottom: 80px;
+    Object-position: 0 90%;
+
+}
+
+
+/*AQUI TERMINA LA PRUEBA*/
+
+
+.pie-pagina{
+    position: absolute;
+    height: 50px;
+    left: 0px;
+    width: 100%;
+}
+
+.pie-pagina-texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:  rgb(228, 222, 222);
+    color: rgb(0, 0, 5);
+    padding: 40px 0 0 0;
+}
+
+
+/* Redes sociales*/
+.redes-container ul{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -90%) ; 
+    margin-top: 20px; 
+}
+
+.redes-container ul li{
+    margin: 0px 10px;
+    list-style: none;
+}
+
+.redes-container ul li .fa{
+    font-size: 50px;
+    line-height: 60px;
+    transition: .4s;
+    color: #fff;
+}
+
+.redes-container ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .2s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+
+}
+
+.facebook{
+    background-color: #3b5999;
+}
+
+.instagram{
+    background-color: #e4405f;
+}
+
+.whatsapp{
+    background-color: #25D366;
+}
+
+.redes-container ul li a:hover{
+    transform: translate(0, -5px)
+}
+
+.redes-container ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+}
+
+.redes-container ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+}
+
+.redes-container ul li:nth-child(3) a:hover{
+    background-color: #25D366;
+}
+
+.fuente-modal{
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+}
+
+.modal-title{
+    font-family: 'Acme', sans-serif;
+    color: rgb(90, 90, 98);
+    font-size: 28px;}
+
+.modal-lg{
+    max-width: 30% !important;
+}
+
+
+/*Pagina de productos*/
+
+.fuente-produc-titu{
+    margin-top: 20px;
+    color: rgb(243, 144, 127);
+}
+
